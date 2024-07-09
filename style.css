@@ -6,10 +6,13 @@ body {
     height: 100vw;
 }
 
+:root {
+    --main-color: #48B5E1;
+}
+
 /********** HEARDER **********/
 
 header {
-
     display: flex;
     flex-direction: column;
     gap: 35px;
@@ -26,7 +29,7 @@ header {
 .header__clipped-rectangle--blue {
     width: 20%;
     height: 60px;
-    background-color: #48B5E1;
+    background-color: var(--main-color);
     clip-path: polygon(0 0, 100% 0%, 87% 100%, 0% 100%);
     position: relative;
 }
@@ -43,7 +46,7 @@ header {
 }
 
 .header__logo {
-    width: 20%;
+    height: 40px;
 }
 
 .header__infos {
@@ -56,13 +59,50 @@ header {
 }
 
 .header__contacts {
-
     display: flex;
-    gap : 100px
+    gap: 100px
 }
 
-.btn-contact {
+.header__contacts div div {
+    display: flex;
+    gap: 15px
+}
 
-    border:none;
-    
+.header__contacts i {
+    color: var(--main-color);
+    font-size: 20px;
+}
+.header__contacts--title {
+    font-weight: bold;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate
+}
+
+.header__contacts--town {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin: 3px 30px 10px;
+}
+
+
+.header__btn {
+
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header__contacts-btn {
+    display: flex;
+    align-items: baseline;
+    padding: 10px 20px;
+    gap:15px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+    background-color: var(--main-color);
+
 }
