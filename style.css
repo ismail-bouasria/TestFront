@@ -112,3 +112,9 @@ header {
 }
 
 /* NAVBAR */
+.navbar{
+    display: flex;
+    background-color: #EEF8FB;
+    justify-content: space-between;
+    padding: 30px;
+}
