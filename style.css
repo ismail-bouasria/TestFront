@@ -169,8 +169,11 @@ header {
 
 /************* MAIN **************/
 
-.container__home{
+.home__image--bg{
     background-image: url(./images/location.jpeg);
+}
+
+.container__home{
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -192,8 +195,11 @@ header {
 }
 
 .home__infos section h1 {
-    font-style: italic;
     width: 50%;
+}
+
+.italic {
+    font-style: italic;
 }
 
 .main-color {
@@ -230,3 +236,64 @@ header {
     font-weight: bold;
     color: #D660A7;
 }
+
+.home__image--bg2{
+    background-image: url(./images/howwork.jpeg);
+}
+.howItWork{
+
+    text-align: center;
+}
+
+.howItWork__steps {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+.howItWork__steps::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    width: 77%;
+    left: 5%;
+    right: 5%;
+    height: 1px;
+    background-color: #00AEEF;
+ 
+}
+
+.howItWork__step{
+   
+    padding: 20px;
+    width: 25%;
+    
+}
+.howItWork__step--number {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #00AEEF;
+    color: #E5F7FF;
+    border-radius: 5px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.howItWork__step p {
+    margin: 0;
+    font-size: 14px;
+}
+.howItWork__step--text {
+   
+    font-weight: bold;
+    font-size: small;
+    margin-bottom: 10px;
+}
+
