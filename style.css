@@ -358,4 +358,62 @@ header {
 }
 
 /* Pour les mobiles */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+
+     /* HEADER  */
+
+     .header__container {
+        
+        flex-direction: column-reverse;
+       
+    }
+
+    .header__div-logo {
+       display: none;
+    }
+
+    .header__infos {
+        display: flex;
+        justify-content: center;
+       
+    }
+}
+
+    .header__contacts {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .header__contacts-btn {
+        clip-path: none;
+    }
+
+    /* HOME SECTION */
+
+    .home__infos {
+        padding: 25px;
+    }
+
+    .home__infos section {
+       
+        display: contents;
+    }
+
+    .home__infos section h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home__infos section p {
+        width: 100%;
+       
+    }
+
+    .home__infos-buttons {
+        width: 100%;
+    }
+
+    .home__infos-buttons--btn {
+        width: 80%;
+    }
+}
