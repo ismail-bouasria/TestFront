@@ -44,7 +44,7 @@ header {
     display: flex;
 }
 
-.header__div-logo{
+.header__div-logo {
     padding: 0 50px 0 50px;
 }
 
@@ -77,6 +77,7 @@ header {
     color: var(--main-color);
     font-size: 20px;
 }
+
 .header__contacts--title {
     font-weight: bold;
     font-size: 1.17em;
@@ -102,7 +103,7 @@ header {
     cursor: pointer;
 }
 
-.header__btn:hover{
+.header__btn:hover {
     filter: brightness(1.2);
 }
 
@@ -110,14 +111,14 @@ header {
     display: flex;
     align-items: baseline;
     padding: 15px 20px;
-    gap:15px;
+    gap: 15px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
     background-color: var(--main-color);
 
 }
 
 /* NAVBAR */
-.navbar{
+.navbar {
     display: flex;
     background-color: #EEF8FB;
     flex-wrap: wrap;
@@ -126,14 +127,16 @@ header {
     align-items: baseline;
 }
 
-.navbar__links{
-    display:flex;
+.navbar__links {
+    display: flex;
     gap: 30px;
     margin-left: 50px;
 }
+
 .navbar__links a {
     text-decoration: none;
-    font-size: 13px;;
+    font-size: 13px;
+    ;
     font-weight: bold;
     color: black;
 }
@@ -150,35 +153,37 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .navbar__progressbar div {
-   display: flex;
-   width: 19.5%;
-   flex-direction: column-reverse;
-   text-align: center;
+    display: flex;
+    width: 19.5%;
+    flex-direction: column-reverse;
+    text-align: center;
     color: #333;
 }
 
-.navbar__progressbar progress{
+.navbar__progressbar progress {
     width: 100%;
 }
 
-.progressbar__text{
-  font-size:14px;
-  color:rgba(128, 128, 128, 0.739);
+.progressbar__text {
+    font-size: 14px;
+    color: rgba(128, 128, 128, 0.739);
 }
 
 /************* MAIN **************/
 
-.home__image--bg{
+.home__image--bg {
     background-image: url(./images/location.jpeg);
 }
 
-.container__home{
+.container__home {
     background-size: cover;
     display: flex;
     flex-direction: column;
 }
-.home__infos{
+
+.home__infos {
     background-color: #000000bf;
     background-size: cover;
     display: flex;
@@ -187,11 +192,12 @@ header {
     color: white;
     padding: 50px;
 }
-.home__infos section{
+
+.home__infos section {
     display: flex;
     width: 70%;
     gap: 20px;
-    justify-content: center ;
+    justify-content: center;
 }
 
 .home__infos section h1 {
@@ -205,6 +211,7 @@ header {
 .main-color {
     color: var(--main-color);
 }
+
 .home__infos section p {
     width: 50%;
     text-align: justify;
@@ -215,16 +222,19 @@ header {
     display: block;
     margin-top: 5px;
 }
-.home__infos-buttons{
+
+.home__infos-buttons {
     display: flex;
-    gap: 15px;;
+    gap: 15px;
+    ;
     justify-content: center;
     padding: 50px;
 }
+
 .home__infos-buttons--btn {
     background-color: rgba(255, 255, 255, 0.274);
     border-radius: 5px;
-    padding : 20px 30px;
+    padding: 20px 30px;
     text-align: center;
     display: flex;
     gap: 10px;
@@ -237,10 +247,11 @@ header {
     color: #D660A7;
 }
 
-.home__image--bg2{
+.home__image--bg2 {
     background-image: url(./images/howwork.jpeg);
 }
-.howItWork{
+
+.howItWork {
 
     text-align: center;
 }
@@ -262,15 +273,16 @@ header {
     right: 5%;
     height: 1px;
     background-color: #00AEEF;
- 
+
 }
 
-.howItWork__step{
-   
+.howItWork__step {
+
     padding: 20px;
     width: 25%;
-    
+
 }
+
 .howItWork__step--number {
     font-size: 24px;
     font-weight: bold;
@@ -286,15 +298,64 @@ header {
     align-items: center;
     margin-bottom: 20px;
 }
+
 .howItWork__step p {
     margin: 0;
     font-size: 10px;
     line-height: 1.5;
 }
+
 .howItWork__step--text {
-   
+
     font-weight: bold;
     font-size: small;
     margin-bottom: 10px;
 }
 
+/* Pour les tablettes */
+@media (max-width: 1024px) {
+
+    /* HEADER  */
+
+    .header__infos {
+        gap: 15px;
+    }
+
+    .header__div-logo {
+        padding: 0;
+    }
+
+    /* MAIN */
+
+
+    /* HOME SECTION */
+
+    .home__infos-buttons {
+       
+        flex-wrap: wrap;
+       
+    }
+
+    .home__infos-buttons--btn {
+       
+       width: 25%;
+       
+    }
+
+    .home__infos section {
+      
+        width: 100%;
+        gap: 20px;
+        
+    }
+
+    .howItWork__steps {
+        width: 100%;
+    }
+    
+    
+
+}
+
+/* Pour les mobiles */
+@media (max-width: 768px) {}
