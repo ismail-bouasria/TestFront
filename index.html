@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Locango</title>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
+    
 </head>
 
 <body>
@@ -54,9 +56,38 @@
                 </div>
             </div>
 
-            <!-- NAVBAR  -->
+
 
             <div class="contenair__navbar">
+
+                <!-- NAVBARMOBILE  -->
+                <div class="navbar__mobile">
+
+                    <div class="navbar__mobile--logoAndBurger">
+                        <img class="navbar__mobile--logo" src="./images/logo.png" alt="Locandgo">
+                        <div class="navbar__mobile--burger">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <nav>
+                        <ul class="navbar__mobile--menu">
+                            <li><a href="#">ACCUEIL</a></li>
+                            <li><a href="#">RÉSERVER</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                            
+                            <li>
+                                <a href="#"> <i class="fa-solid fa-user navbar__mobile--user-icon "></i> Ayed.naoess</a>
+                                <a href="#"> <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+                        </ul>
+                            </li>  
+                    </nav>
+                </div>
+
+
+                <!-- NAVBAR  -->
                 <div class="navbar">
                     <div class="navbar__links">
                         <a href="#">ACCUEIL</a>
@@ -64,23 +95,24 @@
                         <a href="#">CONTACT</a>
                     </div>
                     <button class="header__btn navbar__btn">SE CONNECTER</button>
-    
+
                 </div>
+
 
                 <div class="navbar__progressbar">
                     <div>
-                        
+
                         <label class="progressbar__text" for="choose">Choisir un véhicule</label>
                         <span class="progressbar__text">▲</span>
                         <progress id="choose" max="100" value="20">20%</progress>
                     </div>
                     <div>
-                        <label class="progressbar__text"  for="options">Options</label>
+                        <label class="progressbar__text" for="options">Options</label>
                         <span class="progressbar__text">▲</span>
                         <progress id="options" max="100" value="40">40%</progress>
                     </div>
                     <div>
-                        <label class="progressbar__text"  for="infos">Infos personnelles</label>
+                        <label class="progressbar__text" for="infos">Infos personnelles</label>
                         <span class="progressbar__text">▲</span>
                         <progress id="choose" max="100" value="60">60%</progress>
                     </div>
@@ -92,13 +124,13 @@
                     <div>
                         <label class="progressbar__text" for="pay">Paiment</label>
                         <span class="progressbar__text">▲</span>
-                         <progress id="pay" max="100" value="100">100%</progress>
+                        <progress id="pay" max="100" value="100">100%</progress>
                     </div>
                 </div>
             </div>
-           
 
-            
+
+
         </div>
     </header>
 
@@ -107,18 +139,23 @@
         <div class="container__home home__image--bg">
             <div class="home__infos">
                 <section>
-                    <h1>Nous somme <span class="main-color">fiers</span> de partager nos chiffres clés de <span class="main-color">l'année 2023</span></h1>
-                    <p> En 2023, nos clients ont parcouru plus de 15 millions de kilomètres avec nos véhicules, temoignant de la fiabilité
-                        et de la performance de notre flotte. Nous avons facilité 7.750 locations,offrant à nos clients des solutions de 
+                    <h1>Nous somme <span class="main-color">fiers</span> de partager nos chiffres clés de <span
+                            class="main-color">l'année 2023</span></h1>
+                    <p> En 2023, nos clients ont parcouru plus de 15 millions de kilomètres avec nos véhicules,
+                        temoignant de la fiabilité
+                        et de la performance de notre flotte. Nous avons facilité 7.750 locations,offrant à nos clients
+                        des solutions de
                         mobilité flexibles et adaptées à leurs besoins.
-                        <span class="block">Nos véhicules ont été loués pour un total de 540.941jours, montrant la fonciance que nos clients placent en nous pour leur 
-                            déplacements.Notre flotte comprend 514 véhicules bien entretenus, dont 218 voitures de tourisme et de 296 véhicules utilitaires, 
-                            pour répondre à une variété de besoins.</span> 
+                        <span class="block">Nos véhicules ont été loués pour un total de 540.941jours, montrant la
+                            fonciance que nos clients placent en nous pour leur
+                            déplacements.Notre flotte comprend 514 véhicules bien entretenus, dont 218 voitures de
+                            tourisme et de 296 véhicules utilitaires,
+                            pour répondre à une variété de besoins.</span>
                     </p>
                 </section>
-    
+
                 <div class="home__infos-buttons">
-    
+
                     <div class="home__infos-buttons--btn">
                         <span class="home__infos-buttons--numbers">15 468 946</span>
                         <span>kilomètres parcourus</span>
@@ -126,23 +163,25 @@
                     <div class="home__infos-buttons--btn">
                         <span class="home__infos-buttons--numbers">7 750</span>
                         <span>Locations effectués</span>
-                    </div> <div class="home__infos-buttons--btn">
+                    </div>
+                    <div class="home__infos-buttons--btn">
                         <span class="home__infos-buttons--numbers">540 941</span>
                         <span>Jours de location cumulés</span>
-                    </div> <div class="home__infos-buttons--btn">
+                    </div>
+                    <div class="home__infos-buttons--btn">
                         <span class="home__infos-buttons--numbers">541</span>
                         <span>Véhicules disponibles</span>
                     </div>
                 </div>
             </div>
-            
+
         </div>
 
         <div class="container__home home__image--bg2 ">
             <div class="home__infos">
                 <section class="howItWork">
                     <h1>
-                       COMMENT ÇA MARCHE
+                        COMMENT ÇA MARCHE
                     </h1>
 
                 </section>
@@ -150,31 +189,60 @@
                 <div class="howItWork__steps">
                     <div class="howItWork__step">
                         <div class="howItWork__step--number">1</div>
-                        <div class="howItWork__step--text">Choisissez les dates et heures</div>
-                        <p>Sélectionnez les dates et heures de départ et de retour qui conviennent le mieux à votre emploi du temps pour planifier votre location de véhicule.</p>
+                        <div class="howItWork__step--infos">
+                            <div class="howItWork__step--text">Choisissez les dates et heures</div>
+                            <p>
+                                Sélectionnez les dates et heures de départ et de retour qui conviennent
+                                le mieux à votre emploi du temps pour planifier votre location de
+                                véhicule.
+                            </p>
+                        </div>
+
                     </div>
                     <div class="howItWork__step">
                         <div class="howItWork__step--number">2</div>
-                        <div class="howItWork__step--text">Choisissez votre véhicule</div>
-                        <p>Parcourez notre large flotte de véhicules et sélectionnez la catégorie de véhicule qui répond le mieux à vos besoins et préférences.</p>
+                        <div class="howItWork__step--infos">
+                            <div class="howItWork__step--text">Choisissez votre véhicule</div>
+                            <p>
+                                Parcourez notre large flotte de véhicules et sélectionnez la catégorie
+                                de véhicule qui répond le mieux à vos besoins et préférences.
+                            </p>
+                        </div>
+
                     </div>
                     <div class="howItWork__step">
                         <div class="howItWork__step--number">3</div>
-                        <div class="howItWork__step--text">Ajoutez des options et assurances</div>
-                        <p>Choisissez parmi notre gamme d'options et d'assurances supplémentaires pour personnaliser votre location et assurer une tranquillité d'esprit maximale.</p>
+                        <div class="howItWork__step--infos">
+                            <div class="howItWork__step--text">Ajoutez des options et assurances</div>
+                            <p>
+                                Choisissez parmi notre gamme d'options et d'assurances supplémentaires
+                                pour personnaliser votre location et assurer une tranquillité
+                                d'esprit maximale.
+                            </p>
+                        </div>
+
                     </div>
                     <div class="howItWork__step">
                         <div class="howItWork__step--number">4</div>
-                        <div class="howItWork__step--text">Paiement en ligne et signature du contrat</div>
-                        <p>Effectuez votre paiement en ligne de manière sécurisée. Ensuite, rendez-vous dans l'une de nos agences pour signer le contrat et récupérer votre véhicule. Profitez pleinement de votre trajet en toute sérénité avec LocAndGo !</p>
+                        <div class="howItWork__step--infos">
+                            <div class="howItWork__step--text">Paiement en ligne et signature du contrat</div>
+                            <p>
+                                Effectuez votre paiement en ligne de manière sécurisée. Ensuite,
+                                rendez-vous dans l'une de nos agences pour signer le contrat
+                                et récupérer votre véhicule. Profitez pleinement de votre trajet
+                                en toute sérénité avec LocAndGo !
+                            </p>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
-            
+
         </div>
-      
+
         <footer>
-            
+
         </footer>
 
 </body>
