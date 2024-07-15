@@ -57,7 +57,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 60px;
     justify-content: space-between;
     padding: 0 20px 20px 20px;
 }
@@ -323,10 +322,6 @@ header {
 
     /* HEADER  */
 
-    .header__infos {
-        gap: 15px;
-    }
-
     .header__div-logo {
         padding: 0;
     }
@@ -383,10 +378,10 @@ header {
 
     .header__infos {
         display: flex;
+        gap: 15px;
+        flex-direction: column;
         justify-content: center;
-
     }
-
 
     .header__contacts {
         justify-content: center;
